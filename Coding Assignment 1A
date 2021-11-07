@@ -1,0 +1,58 @@
+package assigment;
+
+import java.util.Scanner;
+
+public class Assigment1A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the number of items: ");
+		int number1 = sc.nextInt();
+		
+		System.out.println("Enter the quantity of first item : ");
+		int quantity1 = sc.nextInt();
+		
+		System.out.println("Enter the price of first item: ");
+		int price1 = sc.nextInt();
+		
+		System.out.println("");
+		
+		System.out.println("Enter the quantity of second item: ");
+		int quantity2 = sc.nextInt();
+		
+		System.out.println("Enter the price of second item: ");
+		int price2 = sc.nextInt();
+		
+		System.out.println("");
+		
+		System.out.println("Enter the quantity of third item: ");
+		int quantity3 = sc.nextInt();
+		
+		System.out.println("Enter the price of third item: ");
+		int price3 = sc.nextInt();
+		
+		System.out.println("");
+		
+		int item1 = quantity1 * price1 ;     //to calculate the total price of first item
+		int item2 = quantity2 * price2 ;     //to calculate the total price of second item
+		int item3 = quantity3 * price3 ;     //to calculate the total price of third item
+		int total = item1 + item2 + item3 ;  //to calculate the total price of all items
+		float discount = (20 * total)/(100); //to calculate the discount price (20%)
+		int paid = total - (int)discount ;   //to calculate the price to paid
+		
+		System.out.println("Total price: " + total);
+		System.out.println("Discount received: " + discount);
+		System.out.println("Price to be paid: " + paid);
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
